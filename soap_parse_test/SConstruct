@@ -1,0 +1,7 @@
+Program("parser",
+    Glob("*.cc"),
+    CCFLAGS = ['-g', '-O0','-Wall', '-I.'],
+    CPPPATH = ['/usr/include/libxml2'],
+    LDFLAGS ='-g',
+    LIBS=['uv', 'glog', 'libxml2'],
+)

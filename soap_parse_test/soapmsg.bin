@@ -1,0 +1,34 @@
+POST /vas HTTP/1.1
+Host:211.139.144.200:8081
+Content-Type:multipart/related; boundary="--NextPart_0_2817_24856";type="text/xml";start="</tnn-200102/mm7-vasp>"
+Content-Transfer-Encoding:8bit
+Authorization:Basic ODg4ODg4Og==
+SOAPAction:""
+MM7APIVersion:V1.5.3_20040621
+Connection: Keep-Alive
+Content-Length:1454
+Mime-Version:1.0
+
+this is a multi-part message in MIME format
+
+
+----NextPart_0_2817_24856
+Content-Type:text/xml;charset="UTF-8"
+Content-Transfer-Encoding:8bit
+Content-ID:</tnn-200102/mm7-vasp>
+
+<?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header><mm7:TransactionID xmlns:mm7="http://www.3gpp.org/ftp/Specs/archive/23_series/23.140/schema/REL-6-MM7-1-0" env:mustUnderstand="1">1000011</mm7:TransactionID></env:Header><env:Body><SubmitReq xmlns="http://www.3gpp.org/ftp/Specs/archive/23_series/23.140/schema/REL-6-MM7-1-0"><MM7Version>6.3.0</MM7Version><SenderIdentification><VASPID>00000</VASPID><VASID>10600000</VASID><SenderAddress>106000000</SenderAddress></SenderIdentification><Recipients><To><Number>13510985753</Number><Number>13902442333</Number></To></Recipients><ServiceCode>4</ServiceCode><DeliveryReport>False</DeliveryReport><Subject>一二三四五中文字符</Subject><ChargedParty>ThirdParty</ChargedParty><ChargedPartyID>13510985755</ChargedPartyID></SubmitReq></env:Body></env:Envelope>
+----NextPart_0_2817_24856
+Content-Type:multipart/related;start="<START>";type="application/smil";boundary="SubPart_7452684322002_77645"
+Content-ID:mmtest
+Content-Transfer-Encoding:8bit
+
+--SubPart_7452684322002_77645
+Content-Type:text/plain;charset=UTF-8
+Content-Transfer-Encoding:8bit
+Content-ID:text1.txt
+
+我的天啊，我的天啊真的
+
+--SubPart_7452684322002_77645--
+----NextPart_0_2817_24856--
