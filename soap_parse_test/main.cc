@@ -21,8 +21,6 @@ struct SoapParser {
 
     const char * contentType;
     size_t contentTypeLen;
-
-
 };
 
 static const char* CONTENT_TYPE = "Content-Type";
