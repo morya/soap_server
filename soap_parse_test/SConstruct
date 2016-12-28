@@ -1,5 +1,7 @@
-Program("parser",
-    Glob("*.cc"),
+VariantDir('build', 'src')
+env = Environment()
+env.Program("parser",
+    Glob("src/*.cc"),
     CCFLAGS = ['-g', '-O0','-Wall', '-I.'],
     CPPPATH = ['/usr/include/libxml2'],
     LDFLAGS ='-g',
